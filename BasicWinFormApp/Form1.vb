@@ -2,6 +2,8 @@
 Imports FontAwesome.Sharp
 
 Public Class Form1
+    Private this As Object
+
     Private Sub dashboard_btn_Click(sender As Object, e As EventArgs) Handles dashboard_btn.Click
         dashboard_btn.IconColor = Color.GreenYellow
         dashboard_btn.ForeColor = Color.GreenYellow
@@ -20,6 +22,7 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.ChartLine
         home_lbl.Text = "Dashboard"
         home_lbl.ForeColor = Color.GreenYellow
+        dashboard_panel.Visible = True
 
 
     End Sub
@@ -146,7 +149,16 @@ Public Class Form1
         home_lbl.Text = "Home"
         home_lbl.ForeColor = Color.White
     End Sub
-    Private Sub ıconPictureBox1_Click(sender As Object, e As EventArgs) Handles home_icon_btn.Click
 
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        Me.Close()
+    End Sub
+
+    Private Sub minimize_btn_Click(sender As Object, e As EventArgs) Handles minimize_btn.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub dashboard_btn_MouseHover(sender As Object, e As EventArgs) Handles dashboard_btn.MouseHover
+        ıconButton1.Visible = True
     End Sub
 End Class

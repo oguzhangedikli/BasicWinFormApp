@@ -33,6 +33,8 @@ Partial Class Form1
         Me.PanelLogo = New System.Windows.Forms.Panel()
         Me.home_btn = New System.Windows.Forms.PictureBox()
         Me.title_panel = New System.Windows.Forms.Panel()
+        Me.minimize_btn = New FontAwesome.Sharp.IconButton()
+        Me.close_btn = New FontAwesome.Sharp.IconButton()
         Me.home_lbl = New System.Windows.Forms.Label()
         Me.home_icon_btn = New FontAwesome.Sharp.IconPictureBox()
         ust_Panel = New System.Windows.Forms.Panel()
@@ -195,6 +197,8 @@ Partial Class Form1
         'title_panel
         '
         Me.title_panel.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.title_panel.Controls.Add(Me.minimize_btn)
+        Me.title_panel.Controls.Add(Me.close_btn)
         Me.title_panel.Controls.Add(Me.home_lbl)
         Me.title_panel.Controls.Add(Me.home_icon_btn)
         Me.title_panel.Dock = System.Windows.Forms.DockStyle.Top
@@ -202,6 +206,34 @@ Partial Class Form1
         Me.title_panel.Name = "title_panel"
         Me.title_panel.Size = New System.Drawing.Size(730, 75)
         Me.title_panel.TabIndex = 1
+        '
+        'minimize_btn
+        '
+        Me.minimize_btn.FlatAppearance.BorderSize = 0
+        Me.minimize_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.minimize_btn.ForeColor = System.Drawing.Color.White
+        Me.minimize_btn.IconChar = FontAwesome.Sharp.IconChar.WindowMinimize
+        Me.minimize_btn.IconColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.minimize_btn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.minimize_btn.Location = New System.Drawing.Point(650, 31)
+        Me.minimize_btn.Name = "minimize_btn"
+        Me.minimize_btn.Size = New System.Drawing.Size(29, 24)
+        Me.minimize_btn.TabIndex = 3
+        Me.minimize_btn.UseVisualStyleBackColor = True
+        '
+        'close_btn
+        '
+        Me.close_btn.FlatAppearance.BorderSize = 0
+        Me.close_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.close_btn.IconChar = FontAwesome.Sharp.IconChar.WindowClose
+        Me.close_btn.IconColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(36, Byte), Integer))
+        Me.close_btn.IconFont = FontAwesome.Sharp.IconFont.[Auto]
+        Me.close_btn.IconSize = 38
+        Me.close_btn.Location = New System.Drawing.Point(685, 29)
+        Me.close_btn.Name = "close_btn"
+        Me.close_btn.Size = New System.Drawing.Size(33, 34)
+        Me.close_btn.TabIndex = 2
+        Me.close_btn.UseVisualStyleBackColor = True
         '
         'home_lbl
         '
@@ -231,11 +263,17 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(71, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(957, 583)
+        Me.ControlBox = False
         Me.Controls.Add(Me.title_panel)
         Me.Controls.Add(ust_Panel)
         Me.ForeColor = System.Drawing.Color.White
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"
         ust_Panel.ResumeLayout(False)
         Me.PanelLogo.ResumeLayout(False)
@@ -259,4 +297,6 @@ Partial Class Form1
     Friend WithEvents title_panel As Panel
     Friend WithEvents home_icon_btn As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents home_lbl As Label
+    Friend WithEvents close_btn As FontAwesome.Sharp.IconButton
+    Friend WithEvents minimize_btn As FontAwesome.Sharp.IconButton
 End Class
