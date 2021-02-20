@@ -22,9 +22,10 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.ChartLine
         home_lbl.Text = "Dashboard"
         home_lbl.ForeColor = Color.GreenYellow
-        dashboard_panel.Visible = True
-
-
+        PictureBox1.Visible = False
+        dashboard_pnl.Visible = True
+        orders_pnl.Visible = False
+        Panel4.Visible = False
     End Sub
 
     Private Sub orders_btn_Click(sender As Object, e As EventArgs) Handles orders_btn.Click
@@ -45,6 +46,12 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.ShoppingBasket
         home_lbl.Text = "Orders"
         home_lbl.ForeColor = Color.Yellow
+        PictureBox1.Visible = False
+        dashboard_pnl.Visible = True
+        orders_pnl.Visible = True
+        orders_tbl.Visible = True
+        Panel4.Visible = True
+
     End Sub
 
     Private Sub products_btn_Click(sender As Object, e As EventArgs) Handles products_btn.Click
@@ -65,6 +72,8 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.PrescriptionBottleAlt
         home_lbl.Text = "Products"
         home_lbl.ForeColor = Color.LightGreen
+        PictureBox1.Visible = False
+
     End Sub
 
     Private Sub costumers_btn_Click(sender As Object, e As EventArgs) Handles costumers_btn.Click
@@ -85,6 +94,7 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.AddressBook
         home_lbl.Text = "Costumers"
         home_lbl.ForeColor = Color.Orange
+        PictureBox1.Visible = False
 
     End Sub
 
@@ -106,6 +116,8 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.CreditCard
         home_lbl.Text = "Marketing"
         home_lbl.ForeColor = Color.Red
+        PictureBox1.Visible = False
+
     End Sub
 
     Private Sub settings_btn_Click(sender As Object, e As EventArgs) Handles settings_btn.Click
@@ -126,7 +138,7 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.Cog
         home_lbl.Text = "Settings"
         home_lbl.ForeColor = Color.Gold
-
+        PictureBox1.Visible = False
 
     End Sub
 
@@ -148,17 +160,29 @@ Public Class Form1
         home_icon_btn.IconChar = IconChar.Home
         home_lbl.Text = "Home"
         home_lbl.ForeColor = Color.White
+        PictureBox1.Visible = True
+        dashboard_pnl.Visible = False
+        PictureBox1.Visible = False
+
     End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-        Me.Close()
+        If MsgBox("Çıkmak istediğinize emin misiniz?", MsgBoxStyle.YesNo, Title:="Uyarı!") = MsgBoxResult.Yes Then
+            Me.Close()
+        End If
+
     End Sub
 
     Private Sub minimize_btn_Click(sender As Object, e As EventArgs) Handles minimize_btn.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub dashboard_btn_MouseHover(sender As Object, e As EventArgs) Handles dashboard_btn.MouseHover
-        ıconButton1.Visible = True
+
+    Private Sub dashboard_btn_MouseClick(sender As Object, e As MouseEventArgs) Handles dashboard_btn.MouseClick
+        dashboard_pnl.Show()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
     End Sub
 End Class

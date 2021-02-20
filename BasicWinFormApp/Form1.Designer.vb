@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim ust_Panel As System.Windows.Forms.Panel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
@@ -37,12 +37,38 @@ Partial Class Form1
         Me.close_btn = New FontAwesome.Sharp.IconButton()
         Me.home_lbl = New System.Windows.Forms.Label()
         Me.home_icon_btn = New FontAwesome.Sharp.IconPictureBox()
+        Me.dashboard_pnl = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.orders_tbl = New System.Windows.Forms.TableLayoutPanel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.orders_pnl = New System.Windows.Forms.Panel()
+        Me.dashboard_panel_3 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.dashboard_panel_2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.dashboard_panel_1 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.cost_predıcted_lbl = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         ust_Panel = New System.Windows.Forms.Panel()
         ust_Panel.SuspendLayout()
         Me.PanelLogo.SuspendLayout()
         CType(Me.home_btn, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.title_panel.SuspendLayout()
         CType(Me.home_icon_btn, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dashboard_pnl.SuspendLayout()
+        Me.Panel4.SuspendLayout()
+        Me.orders_tbl.SuspendLayout()
+        Me.dashboard_panel_3.SuspendLayout()
+        Me.dashboard_panel_2.SuspendLayout()
+        Me.dashboard_panel_1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ust_Panel
@@ -58,11 +84,12 @@ Partial Class Form1
         ust_Panel.Dock = System.Windows.Forms.DockStyle.Left
         ust_Panel.Location = New System.Drawing.Point(0, 0)
         ust_Panel.Name = "ust_Panel"
-        ust_Panel.Size = New System.Drawing.Size(227, 583)
+        ust_Panel.Size = New System.Drawing.Size(227, 510)
         ust_Panel.TabIndex = 0
         '
         'settings_btn
         '
+        Me.settings_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.settings_btn.Dock = System.Windows.Forms.DockStyle.Top
         Me.settings_btn.FlatAppearance.BorderSize = 0
         Me.settings_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -82,6 +109,7 @@ Partial Class Form1
         '
         'marketing_btn
         '
+        Me.marketing_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.marketing_btn.Dock = System.Windows.Forms.DockStyle.Top
         Me.marketing_btn.FlatAppearance.BorderSize = 0
         Me.marketing_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -101,6 +129,7 @@ Partial Class Form1
         '
         'costumers_btn
         '
+        Me.costumers_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.costumers_btn.Dock = System.Windows.Forms.DockStyle.Top
         Me.costumers_btn.FlatAppearance.BorderSize = 0
         Me.costumers_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -120,6 +149,7 @@ Partial Class Form1
         '
         'products_btn
         '
+        Me.products_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.products_btn.Dock = System.Windows.Forms.DockStyle.Top
         Me.products_btn.FlatAppearance.BorderSize = 0
         Me.products_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -139,6 +169,7 @@ Partial Class Form1
         '
         'orders_btn
         '
+        Me.orders_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.orders_btn.Dock = System.Windows.Forms.DockStyle.Top
         Me.orders_btn.FlatAppearance.BorderSize = 0
         Me.orders_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -158,6 +189,7 @@ Partial Class Form1
         '
         'dashboard_btn
         '
+        Me.dashboard_btn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.dashboard_btn.Dock = System.Windows.Forms.DockStyle.Top
         Me.dashboard_btn.FlatAppearance.BorderSize = 0
         Me.dashboard_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -259,17 +291,256 @@ Partial Class Form1
         Me.home_icon_btn.TabIndex = 0
         Me.home_icon_btn.TabStop = False
         '
+        'dashboard_pnl
+        '
+        Me.dashboard_pnl.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(71, Byte), Integer))
+        Me.dashboard_pnl.Controls.Add(Me.Panel4)
+        Me.dashboard_pnl.Controls.Add(Me.orders_pnl)
+        Me.dashboard_pnl.Controls.Add(Me.dashboard_panel_3)
+        Me.dashboard_pnl.Controls.Add(Me.dashboard_panel_2)
+        Me.dashboard_pnl.Controls.Add(Me.dashboard_panel_1)
+        Me.dashboard_pnl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dashboard_pnl.Location = New System.Drawing.Point(227, 75)
+        Me.dashboard_pnl.Name = "dashboard_pnl"
+        Me.dashboard_pnl.Size = New System.Drawing.Size(730, 435)
+        Me.dashboard_pnl.TabIndex = 2
+        Me.dashboard_pnl.Visible = False
+        '
+        'Panel4
+        '
+        Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.Panel4.Controls.Add(Me.orders_tbl)
+        Me.Panel4.Location = New System.Drawing.Point(34, 18)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(665, 394)
+        Me.Panel4.TabIndex = 0
+        '
+        'orders_tbl
+        '
+        Me.orders_tbl.ColumnCount = 5
+        Me.orders_tbl.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.58943!))
+        Me.orders_tbl.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.98947!))
+        Me.orders_tbl.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.81012!))
+        Me.orders_tbl.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.22113!))
+        Me.orders_tbl.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.38985!))
+        Me.orders_tbl.Controls.Add(Me.Label7, 4, 0)
+        Me.orders_tbl.Controls.Add(Me.Label6, 3, 0)
+        Me.orders_tbl.Controls.Add(Me.Label5, 2, 0)
+        Me.orders_tbl.Controls.Add(Me.Label4, 1, 0)
+        Me.orders_tbl.Controls.Add(Me.Label3, 0, 0)
+        Me.orders_tbl.Location = New System.Drawing.Point(0, 0)
+        Me.orders_tbl.Name = "orders_tbl"
+        Me.orders_tbl.RowCount = 2
+        Me.orders_tbl.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.67513!))
+        Me.orders_tbl.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.32487!))
+        Me.orders_tbl.Size = New System.Drawing.Size(665, 394)
+        Me.orders_tbl.TabIndex = 0
+        '
+        'Label7
+        '
+        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoSize = True
+        Me.Label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label7.Location = New System.Drawing.Point(590, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(69, 46)
+        Me.Label7.TabIndex = 4
+        Me.Label7.Text = "Country"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label6.Location = New System.Drawing.Point(523, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(45, 46)
+        Me.Label6.TabIndex = 3
+        Me.Label6.Text = "Total"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label5.Location = New System.Drawing.Point(345, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(55, 46)
+        Me.Label5.TabIndex = 2
+        Me.Label5.Text = "Status"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(179, 0)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 46)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Date"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label3
+        '
+        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = True
+        Me.Label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label3.Location = New System.Drawing.Point(3, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(60, 46)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Orders"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'orders_pnl
+        '
+        Me.orders_pnl.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.orders_pnl.Location = New System.Drawing.Point(0, 0)
+        Me.orders_pnl.Name = "orders_pnl"
+        Me.orders_pnl.Size = New System.Drawing.Size(730, 435)
+        Me.orders_pnl.TabIndex = 3
+        Me.orders_pnl.Visible = False
+        '
+        'dashboard_panel_3
+        '
+        Me.dashboard_panel_3.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.dashboard_panel_3.Controls.Add(Me.Panel2)
+        Me.dashboard_panel_3.Controls.Add(Me.Label1)
+        Me.dashboard_panel_3.Location = New System.Drawing.Point(380, 18)
+        Me.dashboard_panel_3.Name = "dashboard_panel_3"
+        Me.dashboard_panel_3.Size = New System.Drawing.Size(312, 394)
+        Me.dashboard_panel_3.TabIndex = 2
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Silver
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 30)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(312, 4)
+        Me.Panel2.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Label1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.ForeColor = System.Drawing.Color.Silver
+        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(176, 30)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "COST PREDICTED"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dashboard_panel_2
+        '
+        Me.dashboard_panel_2.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.dashboard_panel_2.Controls.Add(Me.Panel3)
+        Me.dashboard_panel_2.Controls.Add(Me.Label2)
+        Me.dashboard_panel_2.Location = New System.Drawing.Point(34, 237)
+        Me.dashboard_panel_2.Name = "dashboard_panel_2"
+        Me.dashboard_panel_2.Size = New System.Drawing.Size(302, 175)
+        Me.dashboard_panel_2.TabIndex = 1
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.Silver
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 30)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(302, 4)
+        Me.Panel3.TabIndex = 5
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label2.ForeColor = System.Drawing.Color.Silver
+        Me.Label2.Location = New System.Drawing.Point(0, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(175, 30)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "USAGE ESTIMATE"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'dashboard_panel_1
+        '
+        Me.dashboard_panel_1.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(80, Byte), Integer))
+        Me.dashboard_panel_1.Controls.Add(Me.Panel1)
+        Me.dashboard_panel_1.Controls.Add(Me.cost_predıcted_lbl)
+        Me.dashboard_panel_1.Location = New System.Drawing.Point(34, 18)
+        Me.dashboard_panel_1.Name = "dashboard_panel_1"
+        Me.dashboard_panel_1.Size = New System.Drawing.Size(302, 204)
+        Me.dashboard_panel_1.TabIndex = 0
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Silver
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 30)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(302, 4)
+        Me.Panel1.TabIndex = 1
+        '
+        'cost_predıcted_lbl
+        '
+        Me.cost_predıcted_lbl.AutoSize = True
+        Me.cost_predıcted_lbl.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.cost_predıcted_lbl.Dock = System.Windows.Forms.DockStyle.Top
+        Me.cost_predıcted_lbl.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cost_predıcted_lbl.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cost_predıcted_lbl.ForeColor = System.Drawing.Color.Silver
+        Me.cost_predıcted_lbl.Location = New System.Drawing.Point(0, 0)
+        Me.cost_predıcted_lbl.Name = "cost_predıcted_lbl"
+        Me.cost_predıcted_lbl.Size = New System.Drawing.Size(176, 30)
+        Me.cost_predıcted_lbl.TabIndex = 0
+        Me.cost_predıcted_lbl.Text = "COST PREDICTED"
+        Me.cost_predıcted_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(358, 131)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(451, 293)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(71, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(957, 583)
+        Me.ClientSize = New System.Drawing.Size(957, 510)
         Me.ControlBox = False
+        Me.Controls.Add(Me.dashboard_pnl)
         Me.Controls.Add(Me.title_panel)
         Me.Controls.Add(ust_Panel)
+        Me.Controls.Add(Me.PictureBox1)
         Me.ForeColor = System.Drawing.Color.White
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
@@ -281,6 +552,17 @@ Partial Class Form1
         Me.title_panel.ResumeLayout(False)
         Me.title_panel.PerformLayout()
         CType(Me.home_icon_btn, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.dashboard_pnl.ResumeLayout(False)
+        Me.Panel4.ResumeLayout(False)
+        Me.orders_tbl.ResumeLayout(False)
+        Me.orders_tbl.PerformLayout()
+        Me.dashboard_panel_3.ResumeLayout(False)
+        Me.dashboard_panel_3.PerformLayout()
+        Me.dashboard_panel_2.ResumeLayout(False)
+        Me.dashboard_panel_2.PerformLayout()
+        Me.dashboard_panel_1.ResumeLayout(False)
+        Me.dashboard_panel_1.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -299,4 +581,23 @@ Partial Class Form1
     Friend WithEvents home_lbl As Label
     Friend WithEvents close_btn As FontAwesome.Sharp.IconButton
     Friend WithEvents minimize_btn As FontAwesome.Sharp.IconButton
+    Friend WithEvents dashboard_pnl As Panel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents dashboard_panel_3 As Panel
+    Friend WithEvents dashboard_panel_2 As Panel
+    Friend WithEvents dashboard_panel_1 As Panel
+    Friend WithEvents cost_predıcted_lbl As Label
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label2 As Label
+    Friend WithEvents orders_pnl As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents orders_tbl As TableLayoutPanel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label3 As Label
 End Class

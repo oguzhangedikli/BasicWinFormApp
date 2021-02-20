@@ -7,6 +7,7 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationIcon>58480a5fcef1014c0b5e4919.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,6 +18,9 @@
 
   <ItemGroup>
     <PackageReference Include="FontAwesome.Sharp" Version="5.15.3" />
+    <PackageReference Include="Maikebing.System.Windows.Forms.DataVisualization" Version="5.0.1" />
+    <PackageReference Include="Microsoft.Chart.Controls" Version="4.7.2046" />
+    <PackageReference Include="System.Windows.Controls.DataVisualization.Toolkit" Version="4.0.0" />
   </ItemGroup>
 
   <ItemGroup>
